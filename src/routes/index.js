@@ -2,6 +2,7 @@ const { getCategorias } = require('../controllers/getCategoria.js');
 const  getProduct  = require('../controllers/getFakeProd.js')
 const postProd = require('../controllers/postProd1.js')
 const { Router } = require('express');
+
 const productos   = require('../dbdummy.js');
 
 //const {getFakeProd} = require('../dbdummy.js');
@@ -30,6 +31,14 @@ router.get('/productos', (req, res) => {
 
 
 
+
+
+const userRouter = require("./userRouter")
+const productsRouter = require("./productsRouter")
+const router = Router();
+
+router.use("/user", userRouter);
+router.use("/productos", productsRouter);
 
 
 module.exports = router ;

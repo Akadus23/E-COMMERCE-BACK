@@ -3,8 +3,30 @@ const { Producto } = require('../db.js');
 // Obtener todos los productos
 const getProductos = async (req, res, next) => {
   try {
+ inventor1_back
     const productos = await Producto.findAll();
     res.json(productos);
+
+    const pageAsNumber = Number.parseInt(req.query.page);
+    const sizeAsNumber = Number.parseInt(req.query.size);
+
+    let page = 0;
+    if(!Number.isNaN(pageAsNumber) && pageAsNumber > 0) {
+      page = pageAsNumber
+    }
+    let size = 10;
+    if(!Number.isNaN(sizeAsNumber) && sizeAsNumber > 0 && sizeAsNumber < 10) {
+      size = sizeAsNumber
+    }
+
+    const productos = await Producto.findAndCountAll({
+      limit: size,
+      offset: page * size,
+    });
+    res.json({
+      content: productos.rows,
+      totalPages: productos.count / size});
+
   } catch (error) {
     next(error);
   }
