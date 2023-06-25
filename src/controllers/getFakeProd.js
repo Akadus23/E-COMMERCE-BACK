@@ -9,4 +9,4 @@ const getProduct = async (req,resp) =>
     }
 }
 
-module.exports = {getProduct};
+module.exports = getProduct;
