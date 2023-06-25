@@ -46,7 +46,7 @@ const arraydatos = [
  },
  {
    "id": 5,
-   "nombreproducto": "Moonlight Kiss - Camiseta para Mujer",
+   "nombreproducto": "Moonlight  para Mujer",
    "descproducto": "Moonlight Kiss - Camiseta para Mujer Style EBJZT00199 Código de color png0 Características Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
    "colorproducto": " rojo,",
    "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
@@ -54,16 +54,11 @@ const arraydatos = [
    "disponibproducto": "completa",
    "fotosecund": "-",
    "categoria": "ROPA MUJER"
-<<<<<<< Updated upstream
- }
- ];
- module.exports = {arraydatos };
-=======
  },
  {
   "id": 6,
   "nombreproducto": "Moonlight Kiss - Camiseta para Mujer",
-  "descproducto": "Moonlight Kiss - Camiseta para Mujer Style EBJZT00199 Código de color png0 Características Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+  "descproducto": "Moonlight Kiss -tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
   "colorproducto": " rojo,",
   "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
   "precioproducto": "8000",
@@ -85,7 +80,7 @@ const arraydatos = [
 {
  "id": 8,
  "nombreproducto": "Moonlight Kiss - Camiseta para Mujer",
- "descproducto": "Moonlight Kiss - Camiseta para Mujer Style EBJZT00199 Código de color png0 Características Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+ "descproducto": "Moonlight Kiss - algodón",
  "colorproducto": " rojo,",
  "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
  "precioproducto": "8000",
@@ -96,7 +91,84 @@ const arraydatos = [
 {
  "id": 9,
  "nombreproducto": "Camiseta para Mujer",
- "descproducto": "Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+ "descproducto": "Tejido: tejidglkvbnmfldción 100% algodón",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 10,
+ "nombreproducto": "Camiseta 10",
+ "descproducto": "descripcion 10 ",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 11,
+ "nombreproducto": "Camiseta 11",
+ "descproducto": "descripcion 11",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 12,
+ "nombreproducto": "camiseta 12",
+ "descproducto": "Tejido: tedfkmblñfdmb algodón",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 13,
+ "nombreproducto": "camiseta 14",
+ "descproducto": "descripcion n",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 14,
+ "nombreproducto": "Camiseta 15",
+ "descproducto": "descripcion 15",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 15,
+ "nombreproducto": "camiseta 16",
+ "descproducto": "Tejido: tedfkmblñfdmb algodón",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 16,
+ "nombreproducto": "camiseta 16",
+ "descproducto": "descripcion n",
  "colorproducto": " rojo,",
  "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
  "precioproducto": "8000",
@@ -104,6 +176,6 @@ const arraydatos = [
  "fotosecund": "-",
  "categoria": "ROPA MUJER"
 }
+
  ];
  module.exports = arraydatos;
->>>>>>> Stashed changes
