@@ -54,6 +54,56 @@ const arraydatos = [
    "disponibproducto": "completa",
    "fotosecund": "-",
    "categoria": "ROPA MUJER"
+<<<<<<< Updated upstream
  }
  ];
  module.exports = {arraydatos };
+=======
+ },
+ {
+  "id": 6,
+  "nombreproducto": "Moonlight Kiss - Camiseta para Mujer",
+  "descproducto": "Moonlight Kiss - Camiseta para Mujer Style EBJZT00199 Código de color png0 Características Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+  "colorproducto": " rojo,",
+  "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+  "precioproducto": "8000",
+  "disponibproducto": "completa",
+  "fotosecund": "-",
+  "categoria": "ROPA MUJER"
+},
+{
+ "id": 7,
+ "nombreproducto": "Moonlight thunder - Polera",
+ "descproducto": "Moonlight Kiss -",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 8,
+ "nombreproducto": "Moonlight Kiss - Camiseta para Mujer",
+ "descproducto": "Moonlight Kiss - Camiseta para Mujer Style EBJZT00199 Código de color png0 Características Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+},
+{
+ "id": 9,
+ "nombreproducto": "Camiseta para Mujer",
+ "descproducto": "Tejido: tejido de algodón Cuello: Cuello redondo Mangas: Manga corta Composición 100% algodón",
+ "colorproducto": " rojo,",
+ "fotoprinc": "https://res.cloudinary.com/dmjkjz1oa/image/upload/v1687570039/shoppieimg/hffgsbpxf6gy3hfl04v2.jpg",
+ "precioproducto": "8000",
+ "disponibproducto": "completa",
+ "fotosecund": "-",
+ "categoria": "ROPA MUJER"
+}
+ ];
+ module.exports = arraydatos;
+>>>>>>> Stashed changes
