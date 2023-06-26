@@ -1,13 +1,20 @@
-const { getCategorias } = require('../controllers/getCategoria.js');
-const { getProduct } = require('../controllers/getFakeProd.js')
-const { Router } = require('express');
+const express = require('express');
+const router = express.Router();
+const productoRoutes = require('./productRouter');
+const usuarioRoutes = require('./userRouter');
+const carritoRoutes = require('./carritoRouter');
+const categoriaRoutes = require('./categoriaRouter');
 
-//const {getFakeProd} = require('../dbdummy.js');
-const router = Router();
+// Rutas de productos
+router.use(productoRoutes);
 
-router.get("/categ",  getCategorias);
+// Rutas de usuarios
+router.use(usuarioRoutes);
 
-router.get("/fakeprod", getProduct);
+// Rutas del carrito de compra
+router.use(carritoRoutes);
 
+// Rutas de categorías
+router.use(categoriaRoutes);
 
-module.exports = router ;
+module.exports = router;
