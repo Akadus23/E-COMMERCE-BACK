@@ -71,6 +71,22 @@ const {  carrocompra, Categoria, Ordencompra, Usuario,  Producto, Fotoprod  } = 
 // Aca vendrian las relaciones
 
 
+carrocompra.belongsTo(Usuario); // Un carrito de compras pertenece a un usuario
+Usuario.hasOne(carrocompra); // Un usuario puede tener un carrito de compras
+
+carrocompra.belongsToMany(Producto, { through: 'prodxcarro' }); // Un carrito de compras puede tener múltiples productos
+Producto.belongsToMany(carrocompra, { through: 'prodxcarro' }); // Un producto puede estar presente en varios carritos de compras
+
+
+Ordencompra.belongsTo(Usuario); // Una orden de compra pertenece a un usuario
+Usuario.hasMany(Ordencompra); // Un usuario puede realizar múltiples órdenes de compra
+
+Ordencompra.belongsToMany(Producto, { through: 'prodxoc' }); // Una orden de compra puede contener varios productos
+Producto.belongsToMany(Ordencompra, { through: 'prodxoc' }); // Un producto puede estar presente en varias órdenes de compra
+
+
+
+
 
 // Model.belongsToMany(otherModel, { through: 'activities_countries' });
 
