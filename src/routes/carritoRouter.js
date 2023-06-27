@@ -6,7 +6,7 @@ const carritoController = require('../controllers/carritoController.js');
 router.get('/usuarios/:idUsuario/carrito', carritoController.obtenerCarritoCompra);
 
 // Ruta para agregar un producto al carrito de compra de un usuario
-router.post('/usuarios/:idUsuario/carrito', carritoController.agregarProductoCarrito);
+router.post('/usuarios/:idUsuario/carritoCrear', carritoController.agregarProductoCarrito);
 
 // Ruta para eliminar un producto del carrito de compra de un usuario
 router.delete('/usuarios/:idUsuario/carrito/:idProducto', carritoController.eliminarProductoCarrito);

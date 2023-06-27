@@ -6,7 +6,7 @@ const categoriaController = require('../controllers/categoriaController.js');
 router.get('/categorias', categoriaController.obtenerCategorias);
 
 // Ruta para crear una nueva categoría
-router.post('/categorias', categoriaController.crearCategoria);
+router.post('/categoriasCrear', categoriaController.crearCategoria);
 
 // Ruta para obtener una categoría por su ID
 router.get('/categorias/:id', categoriaController.obtenerCategoriaPorId);

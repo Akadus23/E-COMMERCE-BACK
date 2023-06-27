@@ -31,7 +31,7 @@ async function obtenerProductos(req, res) {
 // Controlador para crear un nuevo producto
 const crearProducto = async (req, res) => {
   try {
-    const { id, nombreproducto, descproducto, colorproducto, fotoprinc, precioproducto, disponibproducto, fotosecund, categori } = req.body;
+    const { id, nombreproducto, descproducto, colorproducto, fotoprinc, precioproducto, disponibproducto, fotosecund, categoria } = req.body;
     
     // Lógica para crear un nuevo producto en la base de datos
     const newProduct = await Producto.create({
@@ -43,7 +43,7 @@ const crearProducto = async (req, res) => {
       precioproducto,
       disponibproducto,
       fotosecund,
-      categori
+      categoria
     });
 
     res.status(201).json(newProduct);
