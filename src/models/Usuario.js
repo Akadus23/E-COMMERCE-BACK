@@ -7,4 +7,5 @@ module.exports = (sequelize) => {
     password: { type: DataTypes.STRING, allowNull: true },
     rol: { type: DataTypes.INTEGER, allowNull: true },
   })
+  return User;
  };
