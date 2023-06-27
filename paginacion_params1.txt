@@ -1,0 +1,21 @@
+back end:
+
+1.- backend que acepte los parámetros page y perPage
+2.- Devolver los resultados paginados: Una vez que obtengas los registros correspondientes a la página actual,
+3.- Devolver los resultados paginados:
+4.- Una vez que obtengas los registros correspondientes a la página actua
+5.-  se devuelve array de objetos
+6.- actualziar front end 
+  6.1.- fronEnd : recibe los resultados paginados
+  6.2.- backEnd : devuelve numero total de elementos y pagina actual 
+  
+7.- el frontEnd: . debe usar la información proporcionada por el backend, como el número total de elementos y el número de página actual, para mostrar elementos de navegación como botones de siguiente y anterior, así como información adicional sobre la paginación.
+
+/*
+Realizar la consulta a la base de datos: Utiliza estos parámetros en tu consulta de base de datos para obtener solo los registros correspondientes a la página actual. Esto puede implicar utilizar cláusulas como LIMIT y OFFSET en tu consulta SQL o su equivalente en tu sistema de base de datos.
+*/
+
+
+8.- 
+
+http://localhost:3001/productos?page=1&perPage=4
