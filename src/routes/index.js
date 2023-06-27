@@ -1,3 +1,15 @@
+const express = require('express');
+const router = express.Router();
+const productoRoutes = require('./productRouter');
+const usuarioRoutes = require('./userRouter');
+const carritoRoutes = require('./carritoRouter');
+const categoriaRoutes = require('./categoriaRouter');
+
+// Rutas de productos
+router.use(productoRoutes);
+
+// Rutas de usuarios
+router.use(usuarioRoutes);
 const getCategorias = require('../controllers/getCategoria.js');
 const getProduct = require('../controllers/getProduct');
 const getProductById = require('../controllers/getProdById');
@@ -7,9 +19,11 @@ const createUser = require('../controllers/postUsers');
 const { Router } = require('express');
 const productos   = require('../db.js');
 
-//const {getFakeProd} = require('../dbdummy.js');
+// Rutas del carrito de compra
+router.use(carritoRoutes);
 
-const router = Router();
+// Rutas de categorías
+router.use(categoriaRoutes);
 
 router.get("/categ",  getCategorias);
 
@@ -37,6 +51,7 @@ router.get('/productos', (req, res) => {
 
  res.json(paginatedProductos);
 });
+
 
 
 

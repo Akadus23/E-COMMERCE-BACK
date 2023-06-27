@@ -7,5 +7,8 @@ module.exports = (sequelize) => {
     password: { type: DataTypes.STRING, allowNull: true },
     rol: { type: DataTypes.INTEGER, allowNull: true },
   })
+<<<<<<< HEAD
   return User;
+=======
+>>>>>>> c0453152c4342800727ac0bf294fa82c8feadebc
  };
