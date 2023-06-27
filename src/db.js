@@ -2,15 +2,15 @@ require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
-const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST,DB_PORT,DB_NAME,DB_URL } = process.env;
 
 let sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize({
-      database: "shoppie",
+      database: DB_NAME,
       dialect: "postgres",
       host: DB_HOST,
-      port: 5432,
+      port: DB_PORT,
       username: DB_USER,
       password: DB_PASSWORD,
       pool: {
@@ -29,7 +29,7 @@ let sequelize =
       ssl: true,
     })
     : new Sequelize(
-      `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/shoppie`,
+      `${DB_URL}`,
       { logging: false, native: false }
     );
 
@@ -66,19 +66,31 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
-const { Beer, Seller, Purchases, User } = sequelize.models;
+const {  carrocompra, Categoria, Ordencompra, Usuario,  Producto, Fotoprod  } = sequelize.models; 
 
 // Aca vendrian las relaciones
+
+
+carrocompra.belongsTo(Usuario); // Un carrito de compras pertenece a un usuario
+Usuario.hasOne(carrocompra); // Un usuario puede tener un carrito de compras
+
+carrocompra.belongsToMany(Producto, { through: 'prodxcarro' }); // Un carrito de compras puede tener múltiples productos
+Producto.belongsToMany(carrocompra, { through: 'prodxcarro' }); // Un producto puede estar presente en varios carritos de compras
+
+
+Ordencompra.belongsTo(Usuario); // Una orden de compra pertenece a un usuario
+Usuario.hasMany(Ordencompra); // Un usuario puede realizar múltiples órdenes de compra
+
+Ordencompra.belongsToMany(Producto, { through: 'prodxoc' }); // Una orden de compra puede contener varios productos
+Producto.belongsToMany(Ordencompra, { through: 'prodxoc' }); // Un producto puede estar presente en varias órdenes de compra
+
+
 
 
 
 // Model.belongsToMany(otherModel, { through: 'activities_countries' });
 
-// Producto.belongsToMany(Ordencompra, { through: 'prodxoc' });
-// Ordencompra.belongsToMany(Producto, { through: 'prodxoc' });
-
-// Producto.belongsToMany(Categoria, { through: 'prodxcateg' });
-
-// Categoria.belongsToMany(Producto, { through: 'prodxcateg' });
-
-module.exports = {...sequelize.models, conn: sequelize, };
+module.exports = {
+  ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
+  conn: sequelize, // para importart la conexión { conn } = require('./db.js');
+};
