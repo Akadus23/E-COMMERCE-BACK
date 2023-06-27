@@ -28,8 +28,13 @@ const {  carrocompra, Categoria, Ordencompra, Usuario,  Producto, Fotoprod  } = 
 // Fotoprod.belongsToMany(Producto, { through: 'fotosdelproducto' });
 // Fotoprod.hasmanysTo(Producto, { through: 'fotosdelproducto' });
 
+<<<<<<< Updated upstream
 // Usuario.belongsToMany(Ordencompra, { through: 'ocxusuario' });
 // Ordencompra.belongsToMany(Usuario, { through: 'ocxusuario' });
+=======
+ Usuario.belongsToMany(Ordencompra, { through: 'ocxusuario' });
+ Ordencompra.belongsToMany(Usuario, { through: 'ocxusuario' });
+>>>>>>> Stashed changes
 
 // Producto.belongsToMany(Ordencompra, { through: 'prodxoc' });
 // Ordencompra.belongsToMany(Producto, { through: 'prodxoc' });
