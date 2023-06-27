@@ -3,10 +3,6 @@ const { Producto } = require('../db.js');
 // Obtener todos los productos
 const getProductos = async (req, res, next) => {
   try {
- inventor1_back
-    const productos = await Producto.findAll();
-    res.json(productos);
-
     const pageAsNumber = Number.parseInt(req.query.page);
     const sizeAsNumber = Number.parseInt(req.query.size);
 
@@ -26,7 +22,6 @@ const getProductos = async (req, res, next) => {
     res.json({
       content: productos.rows,
       totalPages: productos.count / size});
-
   } catch (error) {
     next(error);
   }

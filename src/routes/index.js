@@ -13,7 +13,10 @@ router.get("/categ",  getCategorias);
 
 router.get("/fakeprod", getProduct);
 
+router.get("/fakeid/:idFake",getProdxId);
+
 router.post("/postprod",  postProd );
+
 
 router.get('/productos', (req, res) => {
  const page = parseInt(req.query.page) || 1;
